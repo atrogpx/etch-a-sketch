@@ -1,0 +1,15 @@
+#container {
+    display: grid;
+    background-color: brown;
+    height: 480px;
+    width: 480px;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: repeat(16, 1fr);
+}
+
+.grid-elements {
+    display: flex;
+    border: solid;
+    border-color: blue;
+    background-color: aquamarine;
+}
