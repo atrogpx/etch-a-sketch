@@ -1,13 +1,15 @@
+body {
+    display: flex;
+    background-color: #181818;
+}
 #container {
     display: grid;
-    background-color: aqua;
-    height: 960px;
-    width: 960px;
-    grid-template-columns: repeat(16, 1fr);
-    grid-template-rows: repeat(16, 1fr);
+    height: 600px;
+    width: 600px;
+    background-color: azure;
 }
 
 #grid-elements {
-    display: flex;
     border: solid;
+    border-width: 0.1px;
 }

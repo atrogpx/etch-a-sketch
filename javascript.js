@@ -1,16 +1,9 @@
 const DEFAULT_GRIDSNUM = 16
 const container = document.querySelector('#container');
 const gridsNumbtn = document.createElement('button');
-const clearbtn = document.createElement('button');
 options.appendChild(gridsNumbtn);
-options.appendChild(clearbtn);
 gridsNumbtn.textContent = 'Edit the Number of Grids';
-clearbtn.textContent = 'Clear';
 gridsNumbtn.onclick = updateGridsNumber;
-clearbtn.onclick = () => {
-    clearGrid();
-    clearbtn.textContent = 'lol';
-}
 
 function updateGridsNumber() {
     const gridsNumber = +prompt("number of squares per side (int from 2 to 100):");
@@ -25,7 +18,7 @@ function setupGrid(gridsNum) {
         const gridElement = document.createElement('div');
         container.appendChild(gridElement);
         gridElement.id = 'grid-elements';
-        gridElement.addEventListener('mouseover', () => gridElement.setAttribute('style', 'background: pink;'));
+        gridElement.addEventListener('mouseover', () => gridElement.setAttribute('style', 'background: black;'));
     }
 }
 
